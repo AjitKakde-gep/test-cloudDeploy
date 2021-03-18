@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: test-clouddeployment-container
-        image: test-clouddeploy:v1
+        image: deployweb.azurecr.io/test-clouddeploy:v2
         resources:
           limits:
             memory: "128Mi"
