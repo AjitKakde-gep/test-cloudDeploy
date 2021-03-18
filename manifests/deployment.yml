@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-clouddeployment
+spec:
+  selector:
+    matchLabels:
+      app: test-clouddeployment-pod
+  template:
+    metadata:
+      labels:
+        app: test-clouddeployment-pod
+    spec:
+      containers:
+      - name: test-clouddeployment-container
+        image: test-clouddeploy:v1
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 80
