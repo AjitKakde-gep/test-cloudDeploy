@@ -26,7 +26,7 @@ namespace TestCouldDeployment.Controllers
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
-            return new List<WeatherForecast>(){new WeatherForecast(){Date=DateTime.Now,TemperatureC=11, Summary="Version 2"}};
+            return new List<WeatherForecast>(){new WeatherForecast(){Date=DateTime.Now,TemperatureC=11, Summary="Version 15"}};
         }
     }
 }
